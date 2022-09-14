@@ -1,0 +1,126 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: $black;
+    &:hover{
+        color: $blue;
+    }
+  }
+}
+
+
+
+body {
+  .ml-auto,
+  .mx-auto {
+    margin-left: auto !important;
+  }
+  .bg_container {
+    background-color: $bg-opacity-lightblue;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+  box-sizing: border-box;
+  background-color: $white;
+}
+
+.section {
+  padding-top: 130px !important;
+  padding-bottom: 130px !important;
+}
+
+//COMMENTS
+.comment-form{
+  label{
+    display: block;
+  }
+  input[type="submit"]{
+    background-color: $red;
+    border: 0;
+    padding: 10px;
+    color: $white;
+    margin-bottom: 60px;
+  }
+}
+
+ul.resources-comments{
+  margin-left: -35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  li{
+    line-height:2rem;
+  }
+}
+
+// EVENTS
+.mec-search-form, .mec-wrap .mec-totalcal-box{
+    display: none;
+}
+.mec-event-info-desktop{
+    margin-top: 50px;
+}
+.mec-event-grid-modern .event-grid-modern-head .mec-event-day{
+    color: $blue;
+}
+.mec-event-grid-modern .mec-event-footer .mec-booking-button {
+    background-color: $red;
+    color: $white;
+    font-weight: 600;
+    border: 0;
+}
+.mec-border-color, .mec-border-color-hover:hover, .mec-wrap .mec-border-color, .mec-wrap .mec-border-color-hover:hover {
+    background-color: $red;
+    color: $white;
+    font-weight: 600;
+    border: 0;
+}
+.mec-wrap .row {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.mec-month-divider span:before{
+  border-bottom: 4px solid $blue;
+}
+
+// SHAPES
+.rounded{
+    border-radius: 100% !important;
+    max-height: 200px;
+    min-height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+}
+.no-image{
+    background-color: #f9f6f6;
+    border-radius: 100% !important;
+    height: 200px;
+    width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home{
+    .rounded, .no-image{
+        height: 165px;
+        width: 165px;
+        max-height: 165px;
+        min-height: 165px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+

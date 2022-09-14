@@ -1,0 +1,55 @@
+body:not(.home) {
+
+  .hero-banner {
+    .bg_container {
+      position: relative;
+
+      &:before {
+        content: '';
+        background: url(../image/hero-lines.png) 142% 80% no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        @include respond-to(md-down) {
+          background: url(../image/hero-lines.png) 80% 80% no-repeat;
+        }
+
+        @include respond-to(sm-down) {
+          background: url(../image/hero-lines.png) 78% 1% no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.wp-block-group {
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  &__inner-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
+    .wp-block-columns {
+      margin: 2rem 0 4rem;
+      
+      .wp-block-column {
+
+        .wp-block-group{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond-to(sm-down){
+  .is-style-reverse-mobile{
+    flex-direction: column-reverse;
+  }
+}

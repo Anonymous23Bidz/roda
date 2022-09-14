@@ -1,0 +1,38 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+
+    h1, h2{
+        font-weight: bold;
+    }
+
+    .mec-events-content{
+        p{
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+
+    .link-view-all {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        color: $red;
+        margin-top: 2rem;
+      }
+}
+
+  
+  @media only screen and (min-width: 998px) {
+    //
+  }
+  
+  // for mobile only 
+  @media only screen and (max-width: 998px) {
+      body {
+      
+        .lh-lg {
+          line-height: 2rem !important;
+         }
+        
+      }
+  }
